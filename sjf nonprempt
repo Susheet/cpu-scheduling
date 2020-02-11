@@ -1,0 +1,520 @@
+Last login: Tue Feb 11 11:31:38 on ttys000
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:9:2: error: expected ';' after struct
+}
+ ^
+ ;
+1 error generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out 
+
+ this is shortest job first non preemptive
+ enter number of processes=1
+
+ enter name of process=Mac-2:~ mac$ e
+-bash: e: command not found
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:33:10: warning: using the result of an assignment as a condition without
+      parentheses [-Wparentheses]
+  if(head=NULL)
+     ~~~~^~~~~
+sjfnp.c:33:10: note: place parentheses around the assignment to silence this
+      warning
+  if(head=NULL)
+         ^
+     (        )
+sjfnp.c:33:10: note: use '==' to turn this assignment into an equality
+      comparison
+  if(head=NULL)
+         ^
+         ==
+1 warning generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=1
+
+ enter name of process=
+ enter arrival time=2
+
+ enter cpu burst time=2
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:52:4: warning: missing terminating '"' character [-Winvalid-pp-token]
+   "
+   ^
+sjfnp.c:52:4: error: expected expression
+1 warning and 1 error generated.
+Mac-2:~ mac$ cc sjnfp.c
+clang: error: no such file or directory: 'sjnfp.c'
+clang: error: no input files
+Mac-2:~ mac$ vi sjnfp.c
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=2
+
+ enter name of process=
+ enter arrival time=1
+
+ enter cpu burst time=1
+
+ enter name of process=
+ enter arrival time=1
+
+ enter cpu burst time=1
+
+ name of process = 
+
+ arrival time = 1
+ cpu burst time = 1
+ name of process = 
+
+ arrival time = 1
+ cpu burst time = 1
+ name of process = 
+
+ arrival time = 1
+ cpu burst time = 1
+ name of process = 
+
+ arrival time = 1
+ cpu burst time = 1Mac-2:~ mac$ 
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=2
+
+ enter name of process=
+ enter arrival time=3
+
+ enter cpu burst time=3
+
+ enter name of process=
+ enter arrival time=3
+
+ enter cpu burst time=3
+
+ name of process = 
+
+ arrival time = 3
+ cpu burst time = 3
+ name of process = 
+
+ arrival time = 3
+ cpu burst time = 3
+ name of process = 
+
+ arrival time = 3
+ cpu burst time = 3
+ name of process = 
+
+ arrival time = 3
+ cpu burst time = 3Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=3
+
+ enter name of process=
+ enter arrival time=a                   
+
+ enter cpu burst time=
+ enter name of process=
+ enter arrival time=a
+
+ enter cpu burst time=
+ enter name of process=
+ enter arrival time=a
+
+ enter cpu burst time=
+ name of process = 
+
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 0
+ cpu burst time = 0
+ name of process = 
+
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 0
+ cpu burst time = 0
+ name of process = 
+
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 0
+ cpu burst time = 0Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:25:14: warning: format specifies type 'char *' but the argument has type 'char (*)[10]' [-Wformat]
+  scanf("%c",&x);
+         ~~  ^~
+sjfnp.c:26:16: warning: incompatible pointer to integer conversion assigning to 'char' from 'char [10]' [-Wint-conversion]
+  newnode->name=x;
+               ^~
+2 warnings generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:26:16: error: array type 'char [10]' is not assignable
+  newnode->name=x;
+  ~~~~~~~~~~~~~^
+sjfnp.c:52:37: warning: format specifies type 'int' but the argument has type 'char *' [-Wformat]
+   printf("\n name of process = %c",t->name);
+                                ~~  ^~~~~~~
+                                %s
+1 warning and 1 error generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=2
+
+ enter name of process=
+ enter arrival time=a
+
+ enter cpu burst time=
+ enter name of process=
+ enter arrival time=2
+
+ enter cpu burst time=10
+
+ name of process = 
+
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 2
+ cpu burst time = 10
+ name of process = 
+
+ arrival time = 0
+ cpu burst time = 0
+ name of process = a
+ arrival time = 2
+ cpu burst time = 10Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:52:37: warning: format specifies type 'char *' but the argument has type 'char' [-Wformat]
+   printf("\n name of process = %s",t->name);
+                                ~~  ^~~~~~~
+                                %c
+1 warning generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=2
+
+ enter name of process=a
+
+ enter arrival time=2
+
+ enter cpu burst time=2
+
+ name of process = a
+ arrival time = 2
+ cpu burst time = 2
+ name of process = a
+ arrival time = 2
+ cpu burst time = 2Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=2
+
+ enter name of process=a
+
+ enter arrival time=3
+
+ enter cpu burst time=3
+
+ enter name of process=b
+
+ enter arrival time=3
+
+ enter cpu burst time=2
+
+ name of process = a
+ arrival time = 3
+ cpu burst time = 3
+ name of process = a
+ arrival time = 3
+ cpu burst time = 3Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=3
+
+ enter name of process=a
+
+ enter arrival time=3
+
+ enter cpu burst time=2
+
+ enter name of process=b
+
+ enter arrival time=3
+
+ enter cpu burst time=2
+
+ enter name of process=c
+
+ enter arrival time=23
+
+ enter cpu burst time=3
+
+ name of process = a
+ arrival time = 3
+ cpu burst time = 2
+ name of process = b
+ arrival time = 3
+ cpu burst time = 2
+ name of process = a
+ arrival time = 3
+ cpu burst time = 2
+ name of process = b
+ arrival time = 3
+ cpu burst time = 2
+ name of process = a
+ arrival time = 3
+ cpu burst time = 2
+ name of process = b
+ arrival time = 3
+ cpu burst time = 2Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:58:2: error: expected identifier or '('
+ return 0;
+ ^
+sjfnp.c:60:1: error: extraneous closing brace ('}')
+}
+^
+2 errors generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=3
+
+ enter name of process=a
+
+ enter arrival time=3
+
+ enter cpu burst time=1
+
+ enter name of process=b
+
+ enter arrival time=5
+
+ enter cpu burst time=7
+
+ enter name of process=c
+
+ enter arrival time=9
+
+ enter cpu burst time=6
+
+ name of process = a
+ arrival time = 3
+ cpu burst time = 1
+ name of process = b
+ arrival time = 5
+ cpu burst time = 7
+ name of process = c
+ arrival time = 9
+ cpu burst time = 6Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+sjfnp.c:59:10: error: no member named 'ptemp' in 'struct node'
+  ptemp->ptemp->next;
+  ~~~~~  ^
+1 error generated.
+Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=3
+
+ enter name of process=a
+
+ enter arrival time=2
+
+ enter cpu burst time=10
+
+ enter name of process=b
+
+ enter arrival time=4
+
+ enter cpu burst time=20
+
+ enter name of process=c
+
+ enter arrival time=5
+
+ enter cpu burst time=20
+
+ name of process = a
+ arrival time = 2
+ cpu burst time = 10
+ name of process = b
+ arrival time = 4
+ cpu burst time = 20
+ name of process = c
+ arrival time = 5
+ cpu burst time = 20102020Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=3
+
+ enter name of process=a
+
+ enter arrival time=1
+
+ enter cpu burst time=10
+
+ enter name of process=b
+
+ enter arrival time=2
+
+ enter cpu burst time=20
+
+ enter name of process=c
+
+ enter arrival time=3
+
+ enter cpu burst time=30
+
+ name of process = a
+ arrival time = 1
+ cpu burst time = 10
+ name of process = b
+ arrival time = 2
+ cpu burst time = 20
+ name of process = c
+ arrival time = 3
+ cpu burst time = 30
+10
+20
+30Mac-2:~ mac$ vi sjfnp.c
+Mac-2:~ mac$ cc sjfnp.c
+Mac-2:~ mac$ ./a.out
+
+ this is shortest job first non preemptive
+ enter number of processes=3
+
+ enter name of process=a
+
+ enter arrival time=1
+
+ enter cpu burst time=10
+
+ enter name of process=b
+
+ enter arrival time=2
+
+ enter cpu burst time=20
+
+ enter name of process=c
+
+ enter arrival time=4
+
+ enter cpu burst time=30
+
+ name of process = a
+ arrival time = 1
+ cpu burst time = 10
+ name of process = b
+ arrival time = 2
+ cpu burst time = 20
+ name of process = c
+ arrival time = 4
+ cpu burst time = 30
+10
+20
+30
+ 10
+ 32766
+ 20Mac-2:~ mac$ vi sjfnp.c
+
+  newnode->cpu=y; 
+  if(head==NULL)
+  {      
+    head=newnode;
+ }       
+  else{ 
+   temp=head; 
+   while(temp->next!=NULL)
+   {  
+    temp=temp->next;
+   }
+   temp->next=newnode;
+  } 
+ }
+  struct node *t;
+  t=head;
+  while(t!=NULL)
+  {  printf("\n name of process = %c",t->name);
+   printf("\n arrival time = %d",t->arr);
+   printf("\n cpu burst time = %d",t->cpu); t=t->next;  }
+ ptemp=head;
+ for(i=0;i<n;i++)
+ {
+  a[i]=ptemp->cpu;
+  ptemp=ptemp->next;
+ }
+ for(i=0;i<n;i++)
+ {
+  printf("\n%d",a[i]);
+ }
+waitingtime[0]=a[0];
+for(i=1;i<n;i++)
+ {
+  for(j=1;j<n;j++)
+  {
+   h=a[j];
+   a[j]=a[j+1];
+   a[j+1]=h;
+  }
+ }
+for(i=1;i<=n;i++)
+{
+ waitingtime[i]=a[i];
+}
+for(i=0;i<n;i++)
+ {
+  printf("\n %d",a[i]);
+ }
+
+ return 0;
+
+}
+
